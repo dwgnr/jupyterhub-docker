@@ -6,12 +6,12 @@ This is a Dockerized [JupyterHub](https://jupyter.org/hub) deployment.
 
 - Containerized single user Jupyter servers, using
   [DockerSpawner](https://github.com/jupyterhub/dockerspawner)
-- Some form of authentication e.g. PAM or LDAP
+- Some form of authentication e.g. PAM or LDAP (currently only Dummy authentication though)
 - User data persistence
-- HTTPS proxy based on (Traefik)[https://traefik.io/]
+- HTTP(S) proxy based on (Traefik)[https://traefik.io/]
 
-## Required changes
-The following changes might be necessary to get this running in a server environment:
+## Required file changes
+The following changes might be necessary to get this running in your environment:
 
 - In [`.env`](.env), set the variable `HOST` to the name of the server you
   intend to host your deployment on.
@@ -32,7 +32,7 @@ The following changes might be necessary to get this running in a server environ
 
 ## Run
 
-Build and launch the application with
+Build and launch the application with:
 
 ```
 docker-compose build

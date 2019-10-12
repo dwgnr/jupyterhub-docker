@@ -21,7 +21,7 @@ services:
   jupyterlab:
     build: jupyterlab
     image: jupyterlab_img
-    container_name: jupyterlab-throaway
+    container_name: jupyterlab-throwaway
     network_mode: none
     command: echo
 
@@ -30,7 +30,7 @@ services:
     container_name: reverse-proxy
     ports:
       - "80:80"
-      - "443:443"
+      # - "443:443"
       - "8282:8080"
     volumes:
       - ./reverse-proxy/traefik.toml:/etc/traefik/traefik.toml
