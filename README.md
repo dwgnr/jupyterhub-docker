@@ -8,7 +8,7 @@ This is a Dockerized [JupyterHub](https://jupyter.org/hub) deployment.
   [DockerSpawner](https://github.com/jupyterhub/dockerspawner)
 - Some form of authentication e.g. PAM or LDAP (currently only Dummy authentication though)
 - User data persistence
-- HTTP(S) proxy based on (Traefik)[https://traefik.io/]
+- HTTP(S) proxy based on [Traefik](https://traefik.io/)
 
 ## Required file changes
 The following changes might be necessary to get this running in your environment:
